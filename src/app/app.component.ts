@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, } from '@angular/core';
+import { RouterOutlet, } from '@angular/router';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,9 +12,21 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'app';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,) {}
+
   navigateToDirectors() {
     this.router.navigate(['/directors']);
   }
-}
 
+  navigateToGenre() {
+    this.router.navigate(['/genre']);
+  }
+
+  navigateToReview() {
+    this.router.navigate(['/review']);
+  }
+
+  navigateToMovies() {
+    this.router.navigate(['/movies']);
+  }
+}
